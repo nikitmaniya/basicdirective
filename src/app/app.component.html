@@ -1,0 +1,20 @@
+<router-outlet></router-outlet>
+
+<h2>
+    ngSwitch
+</h2>
+<select (change)="setvalue($event)">
+    <option value="">Select </option>
+    <option value="one">1 </option>
+    <option value="two">2 </option>
+    <option value="three">3 </option>
+    <option value="anothr">another </option>
+</select>
+
+<div [ngSwitch]="choose">
+    <h3 *ngSwitchCase="'one'">one</h3>
+    <h3 *ngSwitchCase="'two'">two</h3>
+    <h3 *ngSwitchCase="'three'">three</h3>
+    <h3 *ngSwitchDefault>dedultt</h3>
+</div>
+
